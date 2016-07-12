@@ -48,11 +48,6 @@ function processData(data)
 			otherThing(data);
 		}
 		
-		
-
-
-
-		
 }
 
 function otherThing(data) {
@@ -164,10 +159,12 @@ function gotoFrame(stage, frame)
 		isChoosing = true;
 	}
 	if(stageCount == 12 && frameCount == 5){
+
 		$("#button1").html("去音乐会");
 		$("#button2").html("去新年参拜");
 		$("#Buttondiv").fadeIn(1000,function() {
 			$("#Buttondiv").css("display","block");
+			$("#button2").css("background-image","url(image/t1011grey.png)");
 		})
 		
 		cnum = 2;
@@ -227,6 +224,7 @@ function gotoNextFrame()
 
 
 
+
 function musicStartAll () {
 	$("#Body").css("display","none");
 	var dom = document.getElementById('music');
@@ -257,6 +255,16 @@ $(document).keydown(function(event) {
 				$("#charaimg1").attr("src", "");
 				$("#charaimg2").attr("src", "");
 				$("#charaimg0").attr("src", "");
+
+				$("#savingWord").html("READING");
+				$("#saving").fadeIn(1000,function() {
+					$("#saving").css("display","block");
+					
+				})
+				$("#saving").fadeOut(1000,function() {
+					$("#saving").css("display","none");
+					$("#savingWord").html("");
+				})
 				gotoFrame(stageSave,frameSave);
 			}
 		}
@@ -264,6 +272,15 @@ $(document).keydown(function(event) {
 		if(event.keyCode == 83){
 			stageSave = stageCount;
 			frameSave = frameCount;
+			$("#savingWord").html("SAVED");
+			$("#saving").fadeIn(1000,function() {
+				$("#saving").css("display","block");
+				
+			})
+			$("#saving").fadeOut(1000,function() {
+				$("#saving").css("display","none");
+				$("#savingWord").html("");
+			})
 		}
 	}
 
@@ -282,7 +299,7 @@ $(document).keydown(function(event) {
 
 	
 	if(event.keyCode == 77){//M
-		gotoFrame(49,0);
+		gotoFrame(8,0);
 	}
 
 });
@@ -298,6 +315,7 @@ $("#button1").click(function(){
 		ca[2] = 1;
 		gotoFrame(13,0);
 	$("#Buttondiv").css("display","none");
+	$("#button2").css("background-image","url(image/t1011.png)");
 	isChoosing = false;
 	}
 	else if(cnum == 3){
@@ -363,6 +381,7 @@ function gotoEnd() {
 }
 
 function endingStart () {
+	
 	$("#Body").css("display","none");
 	var dom = document.getElementById('music');
 	dom.pause();

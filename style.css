@@ -89,6 +89,18 @@ div#character {
     font-color:white;
 }
 
+#saving{
+    position: absolute;
+    width:20%;
+    height:10%;
+    display:none;
+}
+
+#savingWord{
+    color:white;
+    font-size: 30px;
+}
+
 
 
 /*div#conversation:before, div#conversation:after, div#characterName:before {

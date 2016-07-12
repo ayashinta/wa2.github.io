@@ -24,7 +24,7 @@ function createnote(){
 var bpm = 375.0234;
 var mdelay= 3000;
 
-var jsonSong = 
+var qjsonSong = 
 {
 	time1:[1,4,8,12,12.5,15,18,23,26,32,33,36,37,39,40,44,44.5,45,47,50,55,58,64,66,67,68,73,77,80,81,89,95,98,103,105,109,112,115,116,118,120,121,127,129,132,134,136,140,141,144,145,148,152,158,160,161,166,168,173,176,178,184,189,192,193,196,198,200,204,205,208,209,212,216,222,224,225,230,232,237,240,242,248,253,256,257],
 	time2:[3,4.5,13,16,19,21,25,27,30,33,35,36.5,38,46,48,51,57,59,65,69,74,77,78,84,85,89.5,93,99,101,106,110,112,114,119,123,127,130,131,133,139,142,145,146,148.12,157,162,165,172,174,176.5,179,182,185,187,194,195,197,203,206,209,210,212.12,221,226,229,236,238,240.5,243,246,249,251,256,258],
@@ -32,21 +32,23 @@ var jsonSong =
 	time4:[1,6,9,15,17,25,29,32,33,38,39,41,49,52,55,65,69,75.5,77,81,85,97,101,108,112,114,120,124,125,130,132,139,144,147,148.36,156,160,164,180,183,185,190,194,196,203,208,211,212.36,220,224,228,244,247,249,254,256,260,261]
 };
 
+var jsonSong = qjsonSong;
 var timeline;
 var starttime;
 var ob;
 function musicStart(){
-	jsonSong = 
-	{
-		time1:[1,4,8,12,12.5,15,18,23,26,32,33,36,37,39,40,44,44.5,45,47,50,55,58,64,66,67,68,73,77,80,81,89,95,98,103,105,109,112,115,116,118,120,121,127,129,132,134,136,140,141,144,145,148,152,158,160,161,166,168,173,176,178,184,189,192,193,196,198,200,204,205,208,209,212,216,222,224,225,230,232,237,240,242,248,253,256,257],
-		time2:[3,4.5,13,16,19,21,25,27,30,33,35,36.5,38,46,48,51,57,59,65,69,74,77,78,84,85,89.5,93,99,101,106,110,112,114,119,123,127,130,131,133,139,142,145,146,148.12,157,162,165,172,174,176.5,179,182,185,187,194,195,197,203,206,209,210,212.12,221,226,229,236,238,240.5,243,246,249,251,256,258],
-		time3:[2,5,7,11,14,20,28,31,33,37,43,47,52,53,57,60,61,64,68,71,75,77,79,87,90.5,100,103,107,111,112,115,116,117,122,125,129,131,135,137,140,143,146,147,148.24,151,153,155,159,163,167,169,171,175,177,184,187,193,195,199,201,204,207,210,211,212.24,215,217,219,223,227,231,233,235,239,241,248,251,256,259,261],
-		time4:[1,6,9,15,17,25,29,32,33,38,39,41,49,52,55,65,69,75.5,77,81,85,97,101,108,112,114,120,124,125,130,132,139,144,147,148.36,156,160,164,180,183,185,190,194,196,203,208,211,212.36,220,224,228,244,247,249,254,256,260,261]
-	};
-
+	jsonSong = qjsonSong;
+	exitmusicgame = 0;
 	$(".musicgame").attr("style","display:block");
 	$(".snowheat").attr("style","display:block");
 	$(".musicgame").animate({opacity:"1"},1000);
+
+
+	$("#playground").attr("style","display:block");
+	$("#playground").animate({opacity:"1"},1000);
+
+
+
 	ob=$("#obi").ProgressBarWars({porcentaje:0,estilo:"obi"});
 	var d1 = new Date();
 	starttime = d1.getTime();
@@ -69,7 +71,7 @@ function musicStart(){
 	{
 		(function(i4){setTimeout(function(){createnote(4)},jsonSong.time4[i4]*bpm+mdelay);})(i4);
 	}
-	setTimeout(function(){CDyesterday();},1160-375.0234+mdelay+102000);
+	setTimeout(function(){showscore();},1160-375.0234+mdelay+102000);
 }
 
 function timecount(){
@@ -106,7 +108,10 @@ function play(event){
 	var heat2 = document.getElementById('heat2');
 	var heat3 = document.getElementById('heat3');
 	var heat4 = document.getElementById('heat4');
-	if(event.keyCode == 27){
+	if(event.keyCode == 27&&exitmusicgame == 0&&timeline>4900){
+		showscore();
+	}
+	if(event.keyCode == 13&&exitmusicgame == 1){
 		CDyesterday();
 	}
 	if(event.keyCode == 68){
@@ -466,13 +471,39 @@ function makegood(){
     setTimeout(function(){$("#good").animate({opacity:"0"},50);},1000);
 }
 
+var exitmusicgame = 0;
 function CDyesterday(){
+	$("#afterplay").animate({opacity:"0"},1000);
+	setTimeout(function(){$("#afterplay").attr("style","display:none")},1000);
+	$(".playresult").animate({opacity:"0"},1000);
+	setTimeout(function(){$(".playresult").attr("style","display:none")},1000);
+
+	$(".musicgame").animate({opacity:"0"},1000);
+	setTimeout(function(){$(".musicgame").attr("style","display:none")},1000);
+
+	$("#playground").animate({opacity:"0"},1000);
+	setTimeout(function(){$("#playground").attr("style","display:none")},1000);
+	exitmusicgame = -1;
+	setTimeout(function(){musicEnd();},1000);
+}
+
+function showscore(){
 	var song = document.getElementById('song');
 	song.pause();
 	$(".snowheat").attr("style","display:none");
 	$("#stage").attr("style","display:none");
 	$("#obi").attr("style","display:none");
-	$(".musicgame").animate({opacity:"0"},1000);
-	setTimeout(function(){$(".musicgame").attr("style","display:none")},1000);
-	musicEnd();
+
+	$("#afterplay").attr("style","display:block");
+	$("#afterplay").animate({opacity:"1"},1000);
+
+
+	document.getElementById('playscore').innerHTML=getscore();
+	document.getElementById('playcombo').innerHTML=getcombonum();
+	document.getElementById('playperfect').innerHTML=getperfectnum();
+	document.getElementById('playgreat').innerHTML=getgreatnum();
+	document.getElementById('playgood').innerHTML=getgoodnum();
+	$(".playresult").attr("style","display:block");
+	$(".playresult").animate({opacity:"1"},1000);
+	exitmusicgame = 1;
 }

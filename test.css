@@ -277,7 +277,7 @@ animation-fill-mode: forwards;
 	position: absolute;
 	width: 48px;
 	height: 48px;
-	top:558px;
+	top:553px;
 	left:606px;
 	opacity: 0;
 }
@@ -288,7 +288,7 @@ animation-fill-mode: forwards;
 	position: absolute;
 	width: 48px;
 	height: 48px;
-	top:558px;
+	top:553px;
 	left:662px;
 	opacity: 0;
 }
@@ -299,7 +299,7 @@ animation-fill-mode: forwards;
 	position: absolute;
 	width: 48px;
 	height: 48px;
-	top:558px;
+	top:553px;
 	left:718px;
 	opacity: 0;
 }
@@ -310,8 +310,82 @@ animation-fill-mode: forwards;
 	position: absolute;
 	width: 48px;
 	height: 48px;
-	top:558px;
+	top:553px;
 	left:775px;
 	opacity: 0;
 }
 
+#playground
+{
+	position: absolute;
+	top:0px;
+	left:0px;
+	width: 100%;
+	height: 100%;
+	z-index: -10;
+	background: url(playground.png);
+	background-size:100%;
+	opacity: 0;
+	display: none;
+}
+
+#afterplay
+{
+	background: url(afterplay.png);
+	position: absolute;
+	width: 349px;
+	height:230px;
+	left:150px;
+	top:200px;
+	display: none;
+	color:white;
+	opacity: 0;
+}
+
+.playresult
+{
+	color:white;
+	display:none;
+	opacity: 0;
+	font-size: 30px
+}
+
+#playscore
+{
+	position: absolute;
+	left:350px;
+	top:205px;
+	font-size: 30px
+}
+
+#playcombo
+{
+	position: absolute;
+	left:350px;
+	top:251px;
+	font-size: 30px
+}
+
+#playperfect
+{
+	position: absolute;
+	left:350px;
+	top:297px;
+	font-size: 30px
+}
+
+#playgreat
+{
+	position: absolute;
+	left:350px;
+	top:343px;
+	font-size: 30px
+}
+
+#playgood
+{
+	position: absolute;
+	left:350px;
+	top:389px;
+	font-size: 30px
+}
