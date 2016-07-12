@@ -1,0 +1,33 @@
+{
+	"stages":
+	[
+		{
+			"backgroundImage": "image/BG000.jpg",
+			"backgroundMusic": "music/TS.mp3",
+			"frames":
+			[
+				{"roleImage":"", "name":"", "sentence":""}
+			]
+		},
+		{
+			"backgroundImage": "image/BG001.jpg",
+			"backgroundMusic": "music/TS.mp3",
+			"frames":
+			[
+				{"roleImage":"", "name":"", "sentence":""},
+				{"roleImage":"", "name":"____", "sentence":"<p>冬天，</p>还没有结束。"},
+				{"roleImage":"", "name":"____", "sentence":"我们的White Album的季节还在继续。"},
+				{"roleImage":"", "name":"雪菜", "sentence":"嗯……"},
+				{"roleImage":"", "name":"春希", "sentence":"……"},
+				{"roleImage":"", "name":"____", "sentence":"雪菜的掌心，和我的手轻轻相合。"},
+				{"roleImage":"", "name":"____", "sentence":"而对现在的我来说，既不想松开这双手，却也没去回握的勇气。"},
+				{"roleImage":"", "name":"____", "sentence":"可是，现在是冬季，属于我们的时间，一定会再次转动。"},
+				{"roleImage":"", "name":"____", "sentence":"在飘雪的白昼我们互相接近，在飘雪的夜晚我们互相伤害。"},
+				{"roleImage":"", "name":"____", "sentence":"然后在今天，在这飘雪的黎明，我们之间又会建立起怎样的关系呢。"},
+				{"roleImage":"", "name":"", "sentence":""}
+			]
+		}
+	]
+}
+
+

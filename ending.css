@@ -1,0 +1,65 @@
+#ending{
+	background-image: url("image/USEBG/white.png");
+	background-repeat: no-repeat;
+	text-align: center;
+	background-size: 100% 100%;
+	position: fixed;
+	width:100%;
+	height:100%;
+	left:0px;
+	right:0px;
+	top:0px;
+	bottom:0px;
+	display:none;
+	overflow:hidden;
+}
+
+
+#endWords{
+	text-align: center;
+	position: absolute;
+	top:-250%;
+	-webkit-animation:wordAnima 500s;
+}
+
+#leaf{
+	width:10%;
+}
+
+.word{
+     font-size: 30px; 
+     font-family: 微软雅黑;
+     background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(rgba(125, 125, 125, 1)), to(rgba(255, 255, 255, 1)));
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+}
+.words{
+     font-size: 20px; 
+     font-family: 微软雅黑;
+     background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(rgba(125, 125, 125, 1)), to(rgba(255, 255, 255, 1)));
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     margin-bottom: -5%;
+}
+
+#endPic{
+	position: absolute;
+	right: 5%;
+	top:15%;
+	width:50%;
+	height: 60%;
+	border: 2px solid;
+	border-color: #eeeeee;
+	z-index: 999;
+	overflow:hidden;
+	border-radius: 10%;
+}
+
+#pic{
+	margin-left:-20%;
+	height:100%;
+	-webkit-animation:picAnima 20s infinite;
+}
+
+@-webkit-keyframes wordAnima{0%{top:100%;}100%{top:－250%;}}
+@-webkit-keyframes picAnima{0%{margin-left:-10%;}50%{margin-left:-20%;}100%{margin-left:-10%;}}

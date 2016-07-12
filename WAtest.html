@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script src="js/l-by-l.min.js"></script>    
+    <link href="test.css" rel="stylesheet" media="screen" type="text/css">
+    <script type="text/javascript" src="js/test.js"></script>
+    <script type="text/javascript" src="ending.js"></script>
+    <link rel="stylesheet" type="text/css" href="ending.css"/>
+    <script type="text/javascript" src="opening.js"></script>
+    <link rel="stylesheet" type="text/css" href="opening.css"/>
+    
+    <title>WA2</title>
+  </head>
+  <body id ="body" onkeydown="play(event)" onkeyup="keyup(event)">
+
+    <div id="opening">
+    <div id="openWords">
+      <p class="opword" id="wordsin"></p>
+    </div>
+  </div>
+
+    <div id="Body">
+      
+      <div id="Buttondiv">
+        <button class="Button" id="button1"></button><p></p>
+        <button class="Button" id="button2"></button>
+      </div>
+
+      <div id="BackGround"></div>
+
+      <div id="character"><img id="charaimg0" class = "charaimg" src = ""></div>
+
+      
+      <div id="character1"><img id="charaimg1" class = "charaimg" src = ""></div>
+      <div id="character2"><img id="charaimg2" class = "charaimg" src = ""></div>
+      
+
+      <div id="conversationBody">
+      <img src="image/con.png" id="conimg">
+	         <div id="characterName"></div>
+	         <div id="conversation"></div>
+        </div>
+    </div>
+    <audio id="music" autoplay="autoplay" loop="loop"></audio>
+    
+  
+    <audio id="heat1"><source src="heat.mp3" type="audio/mpeg"></audio>
+    <audio id="heat2"><source src="heat.mp3" type="audio/mpeg"></audio>
+    <audio id="heat3"><source src="heat.mp3" type="audio/mpeg"></audio>
+    <audio id="heat4"><source src="heat.mp3" type="audio/mpeg"></audio>
+    <audio id="song"><source src="song.mp3" type="audio/mpeg"></audio>
+    <div id="BG" class="musicgame"></div>
+    <div id="perform" class="snowheat"></div>
+    <div id="snowheat1" class="snowheat"></div>
+    <div id="snowheat2" class="snowheat"></div>
+    <div id="snowheat3" class="snowheat"></div>
+    <div id="snowheat4" class="snowheat"></div>
+    <div id="stage"></div>
+    <div id="progress">
+      <div id="obi"></div>
+    </div>
+
+     <script type="text/javascript" src="js/WAtest.js"></script>
+     <script type="text/javascript">$(document).ready(getReady);</script>
+
+
+     <div id="ending">
+    <div id="endWords">
+      <p class="word">登場人物</p>
+      <p class="words">きたはら はるき</p>
+      <p class="word">北原春希</p>
+      <p class="words">おぎそ せつな</p>
+      <p class="word">小木曽雪菜</p>
+      <p class="words">とうま かずさ</p>
+      <p class="word">冬馬 かずさ</p>
+      <p class="words">みずさわ いお</p>
+      <p class="word">水泽依绪</p>
+      <p class="words">いいづか たけや</p>
+      <p class="word">饭冢武也</p>
+      <br></br>
+
+      <p class="word">～OPENING～</p>
+      <p class="word">《Twinkle Snow》 Leaf</p>
+      <p class="word">～ENDING～</p>
+      <p class="word">《Powder Snow》 米泽円</p>
+      <p class="word">～挿入曲～</p>
+      <p class="word">《吐露》 Leaf</p>
+      <br></br>
+
+      <p class="word">主要製作者</p>
+      <p class="word">（アルファベット顺）</p>
+      <p class="word">罗皓天</p>
+      <p class="word">张智晴</p>
+      <p class="word"></p>
+      <p class="word">この番组はご覧のスポンサーの</p>
+      <p class="word">提供でお送くりします</p>
+      <p class="word"><img src="LEAF.jpg" id="leaf"></p>
+      <p class="word">Leaf株式会社</p>
+      <p class="word">White Album 2</p>
+      <p class="word">动感なフロントエンド开発第四季</p>
+    </div>
+
+    <div id="endPic">
+      <img id="pic" src="">
+    </div>
+
+    <audio id="endMusic" autoplay="autoplay" loop="loop" src="music/米泽円 - POWDER SNOW.mp3"></audio>
+
+  </div>
+
+
+  </body>
+
+</html>

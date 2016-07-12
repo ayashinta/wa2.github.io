@@ -1,0 +1,317 @@
+.musicgame
+{
+	display: none;
+	opacity: 0;
+}
+
+.snowheat
+{
+	display: none;
+}
+
+#note1
+{
+width:48px;
+height:48px;
+opacity:0;
+left:606px;
+position:absolute;
+background:url(WA2snow.png);
+animation: myfirst 1.2s linear;
+animation-fill-mode: forwards;
+/* Firefox: */
+-moz-animation: myfirst 1.2s linear;
+/* Safari 和 Chrome: */
+-webkit-animation: myfirst 1.2s linear;
+/* Opera: */
+-o-animation: myfirst 1.2s linear;
+}
+
+@keyframes myfirst
+{
+0% {top:0%;opacity:0}
+5% {top:30px;opacity:1}
+99% {top:550px;opacity:1}
+100% {top:550px;opacity:0}
+}
+
+@-moz-keyframes myfirst /* Firefox */
+{
+0% {top:0px;opacity:0}
+5% {top:30px;opacity:1}
+99% {top:550px;opacity:1}
+100% {top:550px;opacity:0}
+}
+
+@-webkit-keyframes myfirst /* Safari and Chrome */
+{
+0% {top:0px;opacity:0}
+5% {top:30px;opacity:1}
+99% {top:550px;opacity:1}
+100% {top:550px;opacity:0}
+}
+
+@-o-keyframes myfirst /* Opera */
+{
+0% {top:0px;opacity:0}
+5% {top:30px;opacity:1}
+99% {top:550px;opacity:1}
+100% {top:550px;opacity:0}
+}
+
+
+#note2
+{
+width:48px;
+height:48px;
+opacity:0;
+left:661px;
+position:absolute;
+background:url(WA2snow.png);
+animation: myfirst 1.2s linear;
+animation-fill-mode: forwards;
+/* Firefox: */
+-moz-animation: myfirst 1.2s linear;
+/* Safari 和 Chrome: */
+-webkit-animation: myfirst 1.2s linear;
+/* Opera: */
+-o-animation: myfirst 1.2s linear;
+}
+
+@keyframes myfirst
+{
+0% {top:0px;opacity:0}
+5% {top:30px;opacity:1}
+99% {top:550px;opacity:1}
+100% {top:550px;opacity:0}
+}
+
+@-moz-keyframes myfirst /* Firefox */
+{
+0% {top:0px;opacity:0}
+5% {top:30px;opacity:1}
+99% {top:550px;opacity:1}
+100% {top:550px;opacity:0}
+}
+
+@-webkit-keyframes myfirst /* Safari and Chrome */
+{
+0% {top:0px;opacity:0}
+5% {top:30px;opacity:1}
+99% {top:550px;opacity:1}
+100% {top:550px;opacity:0}
+}
+
+@-o-keyframes myfirst /* Opera */
+{
+0% {top:0px;opacity:0}
+5% {top:30px;opacity:1}
+99% {top:550px;opacity:1}
+100% {top:550px;opacity:0}
+}
+
+
+#note3
+{
+width:48px;
+height:48px;
+opacity:0;
+left:716px;
+position:absolute;
+background:url(WA2snow.png);
+animation: myfirst 1.2s linear;
+animation-fill-mode: forwards;
+/* Firefox: */
+-moz-animation: myfirst 1.2s linear;
+/* Safari 和 Chrome: */
+-webkit-animation: myfirst 1.2s linear;
+/* Opera: */
+-o-animation: myfirst 1.2s linear;
+}
+
+@keyframes myfirst
+{
+0% {top:0px;opacity:0}
+5% {top:30px;opacity:1}
+99% {top:550px;opacity:1}
+100% {top:550px;opacity:0}
+}
+
+@-moz-keyframes myfirst /* Firefox */
+{
+0% {top:0px;opacity:0}
+5% {top:30px;opacity:1}
+99% {top:550px;opacity:1}
+100% {top:550px;opacity:0}
+}
+
+@-webkit-keyframes myfirst /* Safari and Chrome */
+{
+0% {top:0px;opacity:0}
+5% {top:30px;opacity:1}
+99% {top:550px;opacity:1}
+100% {top:550px;opacity:0}
+}
+
+@-o-keyframes myfirst /* Opera */
+{
+0% {top:0px;opacity:0}
+5% {top:30px;opacity:1}
+99% {top:550px;opacity:1}
+100% {top:550px;opacity:0}
+}
+
+#note4
+{
+width:48px;
+height:48px;
+opacity:0;
+left:772px;
+position:absolute;
+background:url(WA2snow.png);
+animation: myfirst 1.2s linear;
+animation-fill-mode: forwards;
+/* Firefox: */
+-moz-animation: myfirst 1.2s linear;
+/* Safari 和 Chrome: */
+-webkit-animation: myfirst 1.2s linear;
+/* Opera: */
+-o-animation: myfirst 1.2s linear;
+}
+
+@keyframes myfirst
+{
+0% {top:0px;opacity:0}
+5% {top:30px;opacity:1}
+99% {top:550px;opacity:1}
+100% {top:550px;opacity:0}
+}
+
+@-moz-keyframes myfirst /* Firefox */
+{
+0% {top:0px;opacity:0}
+5% {top:30px;opacity:1}
+99% {top:550px;opacity:1}
+100% {top:550px;opacity:0}
+}
+
+@-webkit-keyframes myfirst /* Safari and Chrome */
+{
+0% {top:0px;opacity:0}
+5% {top:30px;opacity:1}
+99% {top:550px;opacity:1}
+100% {top:550px;opacity:0}
+}
+
+@-o-keyframes myfirst /* Opera */
+{
+0% {top:0px;opacity:0}
+5% {top:30px;opacity:1}
+99% {top:550px;opacity:1}
+100% {top:550px;opacity:0}
+}
+
+#BG
+{
+	background: url(MBG.png);
+	position:absolute;
+	width: 228px;
+	height:646px;
+	z-index: -1;
+	left:600px;
+}
+
+.obi{
+	border-radius: 2px;
+	display: block; 
+	width: 30%;
+	box-shadow:0px 0px 10px 1px #3B8CF8, 0 0 1px #3B8CF8, 0 0 1px #3B8CF8, 0 0 1px #3B8CF8, 0 0 1px #3B8CF8, 0 0 1px #3B8CF8, 0 0 1px #3B8CF8;
+	background-color: #fff;
+}
+
+#progress
+{
+	position: absolute;
+	top:700px;
+	width: 650px;
+	left:400px;
+	background: rgba(249,204,226,0.32);
+}
+
+#perfect
+{
+	position: absolute;
+	background: url(perfect.png);
+	width: 179px;
+	height: 31px;
+	left:630px;
+	top:280px;
+	opacity: 0;
+}
+
+#great
+{
+	position: absolute;
+	background: url(great.png);
+	width: 179px;
+	height: 31px;
+	left:630px;
+	top:280px;
+	opacity: 0;
+}
+
+#good
+{
+	position: absolute;
+	background: url(good.png);
+	width: 179px;
+	height: 31px;
+	left:630px;
+	top:280px;
+	opacity: 0;
+}
+
+#snowheat1
+{
+	background: url(WA2snowheat.png);
+	position: absolute;
+	width: 48px;
+	height: 48px;
+	top:558px;
+	left:606px;
+	opacity: 0;
+}
+
+#snowheat2
+{
+	background: url(WA2snowheat.png);
+	position: absolute;
+	width: 48px;
+	height: 48px;
+	top:558px;
+	left:662px;
+	opacity: 0;
+}
+
+#snowheat3
+{
+	background: url(WA2snowheat.png);
+	position: absolute;
+	width: 48px;
+	height: 48px;
+	top:558px;
+	left:718px;
+	opacity: 0;
+}
+
+#snowheat4
+{
+	background: url(WA2snowheat.png);
+	position: absolute;
+	width: 48px;
+	height: 48px;
+	top:558px;
+	left:775px;
+	opacity: 0;
+}
+
