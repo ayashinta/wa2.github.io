@@ -299,9 +299,14 @@ $(document).keydown(function(event) {
 
 	
 	if(event.keyCode == 77){//M
-		gotoFrame(8,0);
+		gotoFrame(12,0);
 	}
-
+	if(event.keyCode == 78){//N
+		gotoFrame(15,0);
+	}
+	if(event.keyCode == 66){//B
+		gotoFrame(49,0);
+	}
 });
 
 $("#button1").click(function(){
